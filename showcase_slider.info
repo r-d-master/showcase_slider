@@ -1,0 +1,10 @@
+name = Showcase Slider
+core = 7.x
+package = Slider
+version = 7.x-1.0
+
+dependencies[] = views
+
+; Files
+files[] = showcase_slider.views.inc
+files[] = showcase_slider_views_plugin_style_showcase_slider.inc

@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Showcase Slider module file.
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function showcase_slider_views_api() {
+  return array(
+    'api' => 3,
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function showcase_slider_theme() {
+  return array(
+    'showcase_slider' => array(
+      'variables' => array('items' => array(), 'settings' => array()),
+      'template' => 'showcase-slider',
+      'file' => 'showcase_slider.theme.inc',
+      'path' => drupal_get_path('module', 'showcase_slider') . '/theme',
+    ),
+  );
+}
